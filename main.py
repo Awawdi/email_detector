@@ -6,7 +6,7 @@ def extract_emails(text_fragment):
     emails = re.findall(email_pattern, text_fragment)
     unique_emails = sorted(set(emails))
     
-    # Join the unique email addresses with a semicolon
+    # Join the unique email addresses with a semicolon.
     result = ';'.join(unique_emails)
     
     return result
